@@ -10,7 +10,8 @@ import { ConfigModule } from '@nestjs/config';
     UsersModule,
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.re3ha3x.mongodb.net/nestjs-crud-app`,
+      // `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.re3ha3x.mongodb.net/nestjs-crud-app`,
+        'mongodb://localhost:27017/demo_kiro'
     ),
   ],
   controllers: [AppController],
